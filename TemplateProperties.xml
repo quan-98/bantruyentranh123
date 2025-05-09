@@ -1,0 +1,8 @@
+<TemplateProperties version="4.1.0.59861">
+ <Template HomePageName="Home" MenuSource="Pages" name="WordPress" ShowHomePage="true" VerticalMenuSource="Categories" />
+ <Template HomePageName="Home" Location="save" name="Blogger" ShowHomePage="true" ShowNavbar="true" TopMenu="pages" VMenu="archive" />
+ <Template name="DotNetNuke" ShowLoginTab="true" ShowUserTab="true" UseStandardMenu="true" Version="6" />
+ <Template name="Drupal" Version="7" />
+ <Template name="Joomla" Positions="natural" Version="1.5" />
+ <Template name="ArtisteerNet" PublishDateKey="" />
+</TemplateProperties>
