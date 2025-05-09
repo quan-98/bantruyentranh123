@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPStore - Chi tiết sản phẩm: Tắt đèn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+             <h1 style="color: rgba(51, 226, 60, 0.795);"><i style="color: rgba(45, 207, 178, 0.863);" class="fas fa-book-open"></i> AMP STORE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="product.html">Sản phẩm</a></li>
+                <li><a href="#footer" class="scroll-button">Giới thiệu & Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+        <div class="icon">
+            <a href="#">
+            <i class="fa-regular fa-circle-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Chi tiết sản phẩm -->
+    <section class="book-detail">
+        <div class="book-detail-container">
+            <div class="book-image">
+                <img src="IMG/tắt đèn.jpg" alt="Tắt đèn">
+            </div>
+            <div class="book-info">
+                <h1>Tắt đèn</h1>
+                <p class="author">Tác giả: Ngô Tất Tố</p>
+                <p class="price">55.000đ</p>
+                <p class="description">
+                    "Tắt đèn" là một trong những tác phẩm kinh điển của văn học Việt Nam, được viết bởi nhà văn Ngô Tất Tố. Cuốn sách kể về cuộc đời của chị Dậu, một người phụ nữ nông dân nghèo khổ, phải đối mặt với những bất công và áp bức của xã hội phong kiến. Tác phẩm không chỉ là một bức tranh hiện thực về cuộc sống của người nông dân Việt Nam trước Cách mạng tháng Tám, mà còn là lời tố cáo mạnh mẽ đối với chế độ thực dân phong kiến. Với lối viết sắc sảo và giàu cảm xúc, "Tắt đèn" đã để lại dấu ấn sâu đậm trong lòng độc giả qua nhiều thế hệ.
+                </p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm liên quan -->
+    <section class="products">
+        <h2><b>SÁCH LIÊN QUAN</b></h2>
+        <div class="product-container">
+            <!-- Sản phẩm 1 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/mat_biec__nguyen_nhat_anh.jpg" alt="Sách 2"></a>
+                <h3>Mắt Biếc</h3>
+                <p>Nguyễn Nhật Ánh</p>
+                <p class="price">85.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <!-- Sản phẩm 2 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/sodo.jpg" alt="Sách 3"></a>
+                <h3>Số đỏ</h3>
+                <p>Nguyễn Trọng Phụng</p>
+                <p class="price">87.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <!-- Sản phẩm 3 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/dat-rung-phuong-nam.jpg" alt="Sách 4"></a>
+                <h3>Đất Rừng Phương Nam</h3>
+                <p>Đoàn Giỏi</p>
+                <p class="price">65.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="company-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về chúng tôi</h3>
+                <p>AMP Store - Nơi cung cấp sách chất lượng với giá cả phải chăng.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p><i class="fas fa-phone"></i> 0123.456.789</p>
+                <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2858d8c96838596a2a38f9291948d9087cc948c">[email&#160;protected]</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AMPStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Đăng nhập/Đăng ký -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div class="auth-tabs">
+                <button class="tab-button active" onclick="showTab('login')">Đăng nhập</button>
+                <button class="tab-button" onclick="showTab('register')">Đăng ký</button>
+            </div>
+            <!-- Form Đăng nhập -->
+            <div id="login" class="tab-content active">
+                <h3>Đăng nhập</h3>
+                <form id="loginForm">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                    <label for="login-password">Mật khẩu:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="submit" class="btn">Đăng nhập</button>
+                </form>
+            </div>
+            <!-- Form Đăng ký -->
+            <div id="register" class="tab-content">
+                <h3>Đăng ký</h3>
+                <form id="registerForm">
+                    <label for="register-username">Tên người dùng:</label>
+                    <input type="text" id="register-username" name="username" required>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                    <label for="register-password">Mật khẩu:</label>
+                    <input type="password" id="register-password" name="password" required>
+                    <button type="submit" class="btn">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

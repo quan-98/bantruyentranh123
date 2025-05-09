@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPStore - Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+             <h1 style="color: rgba(51, 226, 60, 0.795);"><i style="color: rgba(45, 207, 178, 0.863);" class="fas fa-book-open"></i> AMP STORE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="product.html">Sản phẩm</a></li>
+                <li><a href="#footer" class="scroll-button" >Giới thiệu & Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+        <div class="icon">
+            <a href="#">
+            <i class="fa-regular fa-circle-user"></i> </div></a>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Chào mừng đến với AMP STORE</h2>
+        <p>Nơi bạn tìm thấy những cuốn sách hay nhất</p>
+        <button class="btn">Mua ngay</button>
+        <p></p>
+        <div class="marquee">
+            <div class="marquee-content">
+                🔥 HOT DEAL: Đặt hàng ngay hôm nay để nhận ưu đãi MIỄN PHÍ VẬN CHUYỂN toàn quốc - Chỉ áp dụng đến hết ngày 31/5/2025 🔥
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm -->
+    <section class="products">
+        <h2><b>SÁCH NỔI BẬT</b></h2>
+        <div class="product-container">
+            <!-- Sản phẩm 1 -->
+            <div class="product">
+                <a href="#">  
+                <img src="IMG/DACNHANTAM.jpg" alt="Sách 1" > </a>
+                <h3>Đắc Nhân Tâm</h3>
+                <p>Dale Carnegie</p>
+                <p class="price">99.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/NHAGIAKIM.jpg" alt="Sách 2"> </a>
+                <h3>Nhà Giả Kim</h3>
+                <p>Paulo Coelho</p>
+                <p class="price">85.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/image_239651.jpg" alt="Sách 3"></a>
+                <h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+                <p>Rosie Nguyễn</p>
+                <p class="price">75.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product">
+                <a href="#">
+                <img src="IMG/nhung-cuon-sach-hay-ve-cuoc-song.png" alt="Sách 4"></a>
+                <h3>Tương Lai Trong Tay Ta</h3>
+                <p>Nguyễn Hiến Lê</p>
+                <p class="price">65.000đ</p>
+                <button class="btn add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="company-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về chúng tôi</h3>
+                <p>AMP Store - Nơi cung cấp sách chất lượng với giá cả phải chăng.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p><i class="fas fa-phone"></i> 0123.456.789</p>
+                <p><i class="fas fa-envelope"></i> contact@ampstore.vn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> <img src="IMG/IMP-STORE-FOOTER.jpg" alt="IMP-STORE-FOOTER"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- Modal Đăng nhập/Đăng ký -->
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="auth-tabs">
+            <button class="tab-button active" onclick="showTab('login')">Đăng nhập</button>
+            <button class="tab-button" onclick="showTab('register')">Đăng ký</button>
+        </div>
+        <!-- Form Đăng nhập -->
+        <div id="login" class="tab-content active">
+            <h3>Đăng nhập</h3>
+            <form id="loginForm">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Mật khẩu:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit" class="btn">Đăng nhập</button>
+            </form>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="register" class="tab-content">
+            <h3>Đăng ký</h3>
+            <form id="registerForm">
+                <label for="register-username">Tên người dùng:</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Mật khẩu:</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit" class="btn">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
